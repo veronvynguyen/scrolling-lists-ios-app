@@ -12,11 +12,21 @@ class GodDetailViewController: UIViewController {
 
     var god: GreekGod?
     
+    @IBOutlet weak var godNameLabel: UILabel!
+    @IBOutlet weak var detailsLabel: UILabel!
+    @IBOutlet weak var godImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        print(god?.name)
+        loadInitialData()
+    }
+    
+    func loadInitialData () {
+        godNameLabel.text = god?.name
+        detailsLabel.text = String(god!.height) + "m. " + (god?.superPower)!
+        godImageView.image = UIImage(named: (god?.name)!)
     }
 
     override func didReceiveMemoryWarning() {

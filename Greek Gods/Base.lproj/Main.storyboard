@@ -64,13 +64,51 @@
                     <view key="view" contentMode="scaleToFill" id="qNU-4m-2w2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demeter" translatesAutoresizingMaskIntoConstraints="NO" id="xCs-6s-Giz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="God Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fF-3A-l1g">
+                                <rect key="frame" x="150" y="74" width="215" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="Xx3-c2-mW3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OvD-jy-iSa">
+                                <rect key="frame" x="176" y="125" width="189" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="Qok-rK-ubY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7ES-eB-5aG" firstAttribute="trailing" secondItem="xCs-6s-Giz" secondAttribute="trailing" id="Jcw-rw-x9d"/>
+                            <constraint firstItem="OvD-jy-iSa" firstAttribute="trailing" secondItem="1fF-3A-l1g" secondAttribute="trailing" id="Shd-Te-eDb"/>
+                            <constraint firstItem="xCs-6s-Giz" firstAttribute="top" secondItem="7ES-eB-5aG" secondAttribute="top" id="Zfc-3G-rXx"/>
+                            <constraint firstItem="1fF-3A-l1g" firstAttribute="top" secondItem="7ES-eB-5aG" secondAttribute="top" constant="10" id="aTj-Dv-Y31"/>
+                            <constraint firstItem="7ES-eB-5aG" firstAttribute="bottom" secondItem="xCs-6s-Giz" secondAttribute="bottom" id="cJS-UR-J4b"/>
+                            <constraint firstItem="xCs-6s-Giz" firstAttribute="leading" secondItem="7ES-eB-5aG" secondAttribute="leading" id="l7O-X9-olO"/>
+                            <constraint firstItem="OvD-jy-iSa" firstAttribute="top" secondItem="1fF-3A-l1g" secondAttribute="bottom" constant="8" id="lcR-td-BJc"/>
+                            <constraint firstItem="7ES-eB-5aG" firstAttribute="trailing" secondItem="1fF-3A-l1g" secondAttribute="trailing" constant="10" id="vLk-zf-M1v"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7ES-eB-5aG"/>
                     </view>
+                    <connections>
+                        <outlet property="detailsLabel" destination="OvD-jy-iSa" id="uJK-LN-AbM"/>
+                        <outlet property="godImageView" destination="xCs-6s-Giz" id="eOb-4d-uG1"/>
+                        <outlet property="godNameLabel" destination="1fF-3A-l1g" id="bwM-Tf-6W6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iFP-IY-5hU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1742" y="27"/>
+            <point key="canvasLocation" x="1741.5999999999999" y="26.53673163418291"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0jm-zr-mja">
@@ -92,4 +130,7 @@
             <point key="canvasLocation" x="198.40000000000001" y="26.986506746626688"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="demeter" width="400" height="534"/>
+    </resources>
 </document>
