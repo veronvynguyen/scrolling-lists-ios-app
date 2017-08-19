@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3927E9E41F48C1C000191B8E /* GreekGod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927E9E31F48C1C000191B8E /* GreekGod.swift */; };
+		3927E9E61F48C40400191B8E /* GreekGodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927E9E51F48C40400191B8E /* GreekGodData.swift */; };
 		39DD42631F418A4100F1E6BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DD42621F418A4100F1E6BC /* AppDelegate.swift */; };
-		39DD42651F418A4100F1E6BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DD42641F418A4100F1E6BC /* ViewController.swift */; };
 		39DD42681F418A4100F1E6BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DD42661F418A4100F1E6BC /* Main.storyboard */; };
 		39DD426A1F418A4100F1E6BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39DD42691F418A4100F1E6BC /* Assets.xcassets */; };
 		39DD426D1F418A4100F1E6BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DD426B1F418A4100F1E6BC /* LaunchScreen.storyboard */; };
 		39DD42781F418A4100F1E6BC /* Greek_GodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DD42771F418A4100F1E6BC /* Greek_GodsTests.swift */; };
 		39DD42831F418A4100F1E6BC /* Greek_GodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DD42821F418A4100F1E6BC /* Greek_GodsUITests.swift */; };
+		39DD42911F41908C00F1E6BC /* GodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DD42901F41908C00F1E6BC /* GodsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3927E9E31F48C1C000191B8E /* GreekGod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreekGod.swift; sourceTree = "<group>"; };
+		3927E9E51F48C40400191B8E /* GreekGodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreekGodData.swift; sourceTree = "<group>"; };
 		39DD425F1F418A4100F1E6BC /* Greek Gods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Greek Gods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DD42621F418A4100F1E6BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		39DD42641F418A4100F1E6BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		39DD42671F418A4100F1E6BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39DD42691F418A4100F1E6BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39DD426C1F418A4100F1E6BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		39DD427E1F418A4100F1E6BC /* Greek GodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Greek GodsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DD42821F418A4100F1E6BC /* Greek_GodsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greek_GodsUITests.swift; sourceTree = "<group>"; };
 		39DD42841F418A4100F1E6BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39DD42901F41908C00F1E6BC /* GodsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GodsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				39DD42621F418A4100F1E6BC /* AppDelegate.swift */,
-				39DD42641F418A4100F1E6BC /* ViewController.swift */,
 				39DD42661F418A4100F1E6BC /* Main.storyboard */,
 				39DD42691F418A4100F1E6BC /* Assets.xcassets */,
 				39DD426B1F418A4100F1E6BC /* LaunchScreen.storyboard */,
 				39DD426E1F418A4100F1E6BC /* Info.plist */,
+				39DD42901F41908C00F1E6BC /* GodsTableViewController.swift */,
+				3927E9E31F48C1C000191B8E /* GreekGod.swift */,
+				3927E9E51F48C40400191B8E /* GreekGodData.swift */,
 			);
 			path = "Greek Gods";
 			sourceTree = "<group>";
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39DD42651F418A4100F1E6BC /* ViewController.swift in Sources */,
+				39DD42911F41908C00F1E6BC /* GodsTableViewController.swift in Sources */,
+				3927E9E41F48C1C000191B8E /* GreekGod.swift in Sources */,
 				39DD42631F418A4100F1E6BC /* AppDelegate.swift in Sources */,
+				3927E9E61F48C40400191B8E /* GreekGodData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
