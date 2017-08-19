@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3927E9E41F48C1C000191B8E /* GreekGod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927E9E31F48C1C000191B8E /* GreekGod.swift */; };
 		3927E9E61F48C40400191B8E /* GreekGodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927E9E51F48C40400191B8E /* GreekGodData.swift */; };
+		3927E9EA1F48DEEC00191B8E /* GodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927E9E91F48DEEC00191B8E /* GodDetailViewController.swift */; };
 		39DD42631F418A4100F1E6BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DD42621F418A4100F1E6BC /* AppDelegate.swift */; };
 		39DD42681F418A4100F1E6BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DD42661F418A4100F1E6BC /* Main.storyboard */; };
 		39DD426A1F418A4100F1E6BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39DD42691F418A4100F1E6BC /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		3927E9E31F48C1C000191B8E /* GreekGod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreekGod.swift; sourceTree = "<group>"; };
 		3927E9E51F48C40400191B8E /* GreekGodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreekGodData.swift; sourceTree = "<group>"; };
+		3927E9E91F48DEEC00191B8E /* GodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GodDetailViewController.swift; path = ../GodDetailViewController.swift; sourceTree = "<group>"; };
 		39DD425F1F418A4100F1E6BC /* Greek Gods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Greek Gods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DD42621F418A4100F1E6BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39DD42671F418A4100F1E6BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				39DD42901F41908C00F1E6BC /* GodsTableViewController.swift */,
 				3927E9E31F48C1C000191B8E /* GreekGod.swift */,
 				3927E9E51F48C40400191B8E /* GreekGodData.swift */,
+				3927E9E91F48DEEC00191B8E /* GodDetailViewController.swift */,
 			);
 			path = "Greek Gods";
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				3927E9E41F48C1C000191B8E /* GreekGod.swift in Sources */,
 				39DD42631F418A4100F1E6BC /* AppDelegate.swift in Sources */,
 				3927E9E61F48C40400191B8E /* GreekGodData.swift in Sources */,
+				3927E9EA1F48DEEC00191B8E /* GodDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
